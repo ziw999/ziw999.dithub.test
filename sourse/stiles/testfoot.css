@@ -1,0 +1,81 @@
+.foot {
+    width: 100%;
+    position: relative;   
+}
+
+.foot>.foot-img {
+    position: relative;
+    width: 100%;
+    height: 700vh;
+}
+
+.col-lg-4.col-md-12>.row {
+    display: flex;
+    position: relative;
+}
+
+.col-lg-4.col-md-12>.row h3,
+.col-lg-4.col-md-12>.row p {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: rgb(254, 174, 190);
+} 
+
+.text-footer {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    bottom: 30%;
+}
+
+.form-fl {
+    display: flex;
+}
+
+textarea {
+    height: 200px;
+}
+
+.footer-img {
+    display: flex;
+    position: absolute;
+    max-width: 700px;
+    left: 50%;
+    top: 10%;
+}
+
+.photo {
+    width: 100%;
+}
+
+.photo img {
+    width: 100%;
+}
+
+@media(max-width: 1000px) {
+    .text-footer {
+        bottom: 50%;
+        z-index: 3;
+    }
+    textarea {
+        height: 100px;
+    }
+    .footer-img {
+        display: none;
+      
+    }
+    .my-form {
+        display: flex;
+        flex-direction: column;
+    }
+    .text-footer {
+        width: 50%;
+        bottom: 30%;
+    }
+    .form-fl {
+        display: block;
+    }
+
+}

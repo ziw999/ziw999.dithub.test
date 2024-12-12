@@ -1,0 +1,77 @@
+.grid-flex {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    justify-content: center;
+}
+
+.col-lg-8 {
+    display: flex;
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+}
+
+.you h2 {
+    color: rgb(230, 2, 255);
+}
+
+.orar {
+    display: flex;
+}
+
+.orgnung {
+    color: rgb(97, 97, 97);
+    margin-right: 1em;
+}
+
+.hhh {
+    display: flex;
+}
+
+.hh h4 {
+    display: flex;
+    color: darkred;
+}
+
+.dla {
+    color: rgb(97, 97, 97);
+}
+
+.dla-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.dla-img img {
+    max-width: 80px;
+    margin-inline: 20px;
+}
+
+.dla-img a {
+    text-decoration: none;
+}
+
+.ddd {
+    display: flex;
+}
+
+@media(max-width: 1000px) {
+    .col-lg-8 {
+        left: 1%;
+        bottom: 10%;
+    }
+    .ddd {
+        display: block;
+    }
+    .grid-flex {
+        width: 10vh;
+        justify-content: center;
+    }
+    .col-lg-8 {
+        display: flex;
+        position: absolute;   
+    }
+}
+
+

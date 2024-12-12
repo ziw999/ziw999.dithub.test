@@ -1,0 +1,279 @@
+.grid {
+    display: flex;
+    position: absolute;
+    top: 65%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1);
+}
+
+
+.card {
+    display: inline-block;
+    margin: 10px;
+}
+
+.porjadok {
+    margin-top: 100px;
+}
+
+.conteiner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1);
+}
+
+
+.sec-img {
+    width: 100%;
+    margin-top: 30%;
+}
+
+.sec-img img {
+    width: 100%;
+}
+
+.cartt img {
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.etap {
+    display: flex;
+}
+
+.etap h4 {
+    color: crimson;
+    margin-right: 1em;
+}
+
+.anime {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1);
+    margin-top: 100px;
+}
+
+.anim-text {
+    display: flex;
+}
+
+.anime img {
+    margin-inline: 2em;
+}
+
+.an-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.an-img a {
+    text-decoration: none;
+}
+
+.an-img img {
+    max-width: 80px;
+}
+
+.portfol {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1);
+    margin-top: 100px;
+}
+
+.left {
+    grid-column: 1/4;
+}
+
+.vid {
+    grid-column: 4/10;
+}
+
+.right {
+    grid-column: 10/13;
+}
+
+.video {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.video video {
+    max-width: 90%;
+    margin: 10px;
+}
+
+.video p {
+    margin-inline: 10px;
+}
+
+.vid>.hh,
+.vid a {
+    text-align: center;
+}
+
+.vid a {
+    text-decoration: none;
+    color: black;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 10px;
+    padding-inline: 10px;
+}
+
+.vid a:hover {
+    background-color: rgb(255, 163, 163);
+}
+
+
+.tarif {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1);
+    margin-top: 100px;
+}
+
+.lef {
+    grid-column: 1/4;
+}
+
+.cen {
+    grid-column: 4/10;
+}
+
+.righ {
+    grid-column: 10/13;
+}
+
+.portfol {
+    text-align: center;
+}
+
+.cen-tar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1);
+}
+
+.cen h2 {
+    text-align: center;
+}
+
+.card>.card-body h2 {
+    background-color: rgb(254, 121, 121);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding-block: 15px;
+}
+
+.car-tar {
+    display: none;
+}
+
+
+
+@media(max-width:1000px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5);
+    }
+    .conteiner {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2);
+    }
+    .sec-img {
+        margin-top: 900px;
+    }
+    .cart p {
+        max-width: 700px;
+    }
+    .anime {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2);
+    }
+    .portfol {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(3);
+        margin-top: 100px;
+    }
+    
+    .left {
+        grid-column: 1/13;
+    }
+    
+    .video {
+        grid-column: 1/13;
+    }
+    
+    .right {
+        grid-column: 1/13;
+    }
+    .video {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .car-tar {
+        display: block;
+        margin-top: 100px;
+        width: 100%;
+    }
+    .car-tar .card {
+        width: 50%;
+        left: 25%;
+    }
+    .tarif {
+        display: none;
+    }
+
+}
+
+
+@media(max-width:600px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9);
+    }
+    .sec-img {
+        margin-top: 1800px;
+    }
+    .cart p {
+        max-width: 300px;
+    }
+    .cartt img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .anim-text {
+        max-width: 300px;
+    }
+    .anim-text {
+        display: block;
+    }
+    .video {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+    .video video {
+        max-width: 100%;
+        margin-inline: 0;
+    }
+    .car-tar .card {
+        max-width: 100%;
+        height: 300px;
+    }
+    .car-tar .card {
+        width: 100%;
+        left: 0;
+    }
+}
+
+
+
